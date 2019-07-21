@@ -1,0 +1,27 @@
+{
+	"typeAcquisition": {
+		"enable": true,
+	},
+	"compilerOptions": {
+		"allowJs": true,
+		"downlevelIteration": true,
+		"module": "commonjs",
+		"target": "ES2020",
+		"strict": true,
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"noImplicitReturns": true,
+		"noUncheckedIndexedAccess": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"typeRoots": [
+			"./node_modules/@types",
+			"./typings"
+		]
+	},
+	"exclude": [
+		"node_modules"
+	]
+}

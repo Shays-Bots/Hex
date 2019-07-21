@@ -1,0 +1,79 @@
+{
+  "name": "hex",
+  "version": "1.0.0",
+  "description": "Playing with Rainbows!",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "node -r ts-node/register ."
+  },
+  "author": {
+    "email": "shaybox@shaybox.com",
+    "name": "Shayne Hartford",
+    "url": "https://shaybox.com"
+  },
+  "dependencies": {
+    "@ctrl/tinycolor": "^3.4.0",
+    "@types/node": "^14.14.36",
+    "@types/node-fetch": "^2.5.8",
+    "bufferutil": "^4.0.3",
+    "discord-akairo": "github:discord-akairo/discord-akairo",
+    "discord.js": "github:discordjs/discord.js",
+    "node-fetch": "^2.6.1",
+    "pg": "^8.5.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.6.2",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3",
+    "utf-8-validate": "^5.0.4"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.19.0",
+    "@typescript-eslint/parser": "^4.19.0",
+    "eslint": "^7.22.0",
+    "eslint-config-marine": "^8.3.2"
+  },
+  "eslintConfig": {
+    "extends": "marine",
+    "rules": {
+      "comma-dangle": [
+        "error",
+        "always-multiline"
+      ],
+      "quotes": [
+        "error",
+        "double"
+      ],
+      "@typescript-eslint/quotes": [
+        "error",
+        "double"
+      ],
+      "semi": [
+        "error",
+        "never"
+      ],
+      "@typescript-eslint/semi": [
+        "error",
+        "never"
+      ],
+      "@typescript-eslint/no-unnecessary-condition": [
+        "error",
+        {
+          "allowConstantLoopConditions": true
+        }
+      ],
+      "@typescript-eslint/no-misused-promises": [
+        "error",
+        {
+          "checksVoidReturn": false
+        }
+      ],
+      "@typescript-eslint/restrict-template-expressions": [
+        "error",
+        {
+          "allowAny": true
+        }
+      ]
+    }
+  }
+}
